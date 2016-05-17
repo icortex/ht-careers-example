@@ -1,1 +1,50 @@
-Hello World
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Careers Page</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <!-- API client -->
+  <script src="http://be104b6c964e40affb71-66c0a795989fc5247cbec36925df9829.r81.cf1.rackcdn.com/ht_ats_client.js"></script>
+</head>
+<body>
+<!--Main positions container-->
+<div id="positions">
+  <h1>Current Openings</h1>
+</div>
+
+<!-- Template -->
+<!-- This template is customizable, make sure to keep class attributes -->
+<!-- Each #category-template is appended to #positions-->
+<script id="category-template" type="text/x-ht-template">
+  <div class="category">
+    <h2 class="category-name"></h2>
+  </div>
+</script>
+
+<!-- Template -->
+<!-- This template is customizable, make sure to keep class attributes -->
+<!-- Each #position-template is appended to .family-->
+<script id="position-template" type="text/x-ht-template">
+  <div class="position">
+    <h3>
+      <a class="position-name" href="#"></a>
+    </h3>
+    <p>
+      <span class="position-location"></span>
+      |
+      <span class="contract-type"></span>
+    </p>
+  </div>
+</script>
+
+<script>
+  HT.getPositions("cortex");
+</script>
+</body>
+</html>
